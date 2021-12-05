@@ -22,6 +22,11 @@ fun main() {
     //.constains() is used to check if a list contains or not the defined variable resulting in a boolian 
     println("Contains 4? ${Numbers.contains(4)}")
     println("Contains 7? ${Numbers.contains(7)}")
+    
+    //It's not possible to edit a list like this one without changing the code
+    //However there are certain functions that result in new lists
+    println("Reversed list: ${Numbers.reversed()}")
+    println("Sorted list: ${Numbers.sorted()}")
 }
 
 //https://developer.android.com/codelabs/basic-android-kotlin-training-lists?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-kotlin-unit-2-pathway-3%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-training-lists#1
