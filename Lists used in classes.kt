@@ -107,3 +107,5 @@ fun main() {
     Vegetables Spinach: $5
     Total: $25
 */
+
+// https://developer.android.com/courses/pathways/android-basics-kotlin-unit-2-pathway-3#codelab-https://developer.android.com/codelabs/basic-android-kotlin-training-lists
