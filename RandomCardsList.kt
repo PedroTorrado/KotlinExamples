@@ -38,12 +38,7 @@ fun main() {
         empty = deck.isEmpty()
     }
     
-    if(empty == true){
-        println("All the cards have been pulled")
-    } 
-    else {
-        println("Welp")
-    }
+    println("All the cards have been pulled")
 } 
 
 public fun take_a_card(){
