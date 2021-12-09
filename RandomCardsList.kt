@@ -1,25 +1,35 @@
-val list = mutableListOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
-                         11, 12, 13, 14, 15, 16, 17, 18, 
-                         19, 20, 21, 22, 23, 24, 25, 26, 
-                         27, 28, 29, 30, 31, 32, 33, 34, 
-                         35, 36, 37, 38, 39, 40, 41, 42, 
-                         43 ,44, 45, 46, 47, 48, 49, 50, 
-                         51, 52, 53, 54)
-    
+var deck: MutableList<String> = mutableListOf()
+var blackSuits: MutableList<String> = mutableListOf()
+var redSuits: MutableList<String> = mutableListOf()
+var clubs = listOf("A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K")
+var spades = listOf("A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K")
+var diamonds = listOf("A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K")
+var hearts = listOf("A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K")
+var jacks = listOf("Joker", "Joker")
+
 fun main() {
-    while(0 != 1){
-        take_a_card()
-    }
+    
+    blackSuits.addAll(spades)
+    blackSuits.addAll(clubs)
+    
+    redSuits.addAll(hearts)
+    redSuits.addAll(diamonds)
+    
+    deck.addAll(blackSuits)
+    deck.addAll(redSuits)
+    
+    while(0 == 0){ take_a_card() }
 }
 
 public fun take_a_card(){
-    val card = list.random()    
-    val empty = list.isEmpty()
+
+    val card = deck.random()
+    val empty = deck.isEmpty()
     
     if (empty == false){
         println(card)
-        println(list)
-        list.remove(card)
+        println(deck)
+        deck.remove(card)
     } else {
         println("All cards have been pulled")
     }
