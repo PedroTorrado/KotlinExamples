@@ -21,6 +21,13 @@ fun main() {
     println(peopleAges)
     peopleAges["Fred"] = 31
     println(peopleAges)
+    
+    println()
+    peopleAges.forEach { print("${it.key} is ${it.value}, ") }; println()
+    println(peopleAges.map { "${it.key} is ${it.value}" }.joinToString(", ") )
+	
+    val filteredNames = peopleAges.filter {it.key.length < 4}
+    println(filteredNames)
 }
 
 /*
@@ -35,4 +42,8 @@ contains 7: false
 {Fred=30, Ann=23}
 {Fred=30, Ann=23, Barbara=42, Joe=51}
 {Fred=31, Ann=23, Barbara=42, Joe=51}
+
+Fred is 31, Ann is 23, Barbara is 42, Joe is 51, 
+Fred is 31, Ann is 23, Barbara is 42, Joe is 51
+{Ann=23, Joe=51}
 */
